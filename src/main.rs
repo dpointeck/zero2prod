@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello, world!");
+    let count =  12;
+    println!("Hello, world! {}", count);
 }
