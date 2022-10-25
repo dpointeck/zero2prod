@@ -32,7 +32,6 @@ jobs:
 
       - name: Test
         run: |
-          cd zero2prod
           cargo check
           cargo test
   build:
