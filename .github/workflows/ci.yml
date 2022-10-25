@@ -25,24 +25,12 @@ jobs:
           cargo --version --verbose
           rustc --version
           cargo clippy --version
-      # - name: Lint
-      #   run: |
-      #     cd phaser
-      #     make lint
+
+      - name: Lint
+        run: |
+          cargo clippy
 
       - name: Test
         run: |
-          cd zero2prod
           cargo check
           cargo test
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Build Docker
-        run: |
-          make docker
-      - name: Docker image info
-        run: |
-          docker images
