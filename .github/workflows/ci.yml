@@ -32,9 +32,9 @@ jobs:
 
       - name: Test
         run: |
-          cd phaser
-          make check
-          make test
+          cd zero2prod
+          cargo check
+          cargo test
   build:
     runs-on: ubuntu-latest
     steps:
