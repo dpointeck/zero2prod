@@ -34,3 +34,11 @@ jobs:
         run: |
           cargo check
           cargo test
+
+      - name: Format
+        run: |
+          cargo fmt -- --check
+      
+      - name: Audit
+        run: |
+          cargo audit
