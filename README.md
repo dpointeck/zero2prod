@@ -1,10 +1,12 @@
 # Zero2Prod in rust
 
-My code allong from the book [Zero to Production in Rust](https://www.zero2prod.com/index.html?country=Austria&discount_code=VAT20). 
+My code allong from the book [Zero to Production in Rust](https://www.zero2prod.com/index.html?country=Austria&discount_code=VAT20).
 
 ## Prerequisites
 
 - I choose to use [casey/just](https://github.com/casey/just) for automation.
+- Install `cargo install cargo-watch`
+- Install `cargo install cargo-tarpaulin`
 
 ## Getting started
 
